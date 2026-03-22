@@ -487,6 +487,7 @@ body {
     position: relative;
     width: 100%;
     aspect-ratio: 1;
+    overflow: hidden; /* ✅ FIX: lock frame */
 }
 
 .profile-image-wrapper {
@@ -498,36 +499,38 @@ body {
     border: 4px solid var(--gold-rich);
     box-shadow: var(--shadow-gold), 0 0 0 4px var(--silver-dark);
     background: #1a1a1a;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* THE FIX - Image shows exactly as original size, no zoom, no crop */
+/* ✅ FINAL FIXED IMAGE (no zoom, no movement) */
 .profile-img {
-    width: auto !important;
-    height: auto !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;   /* 🔥 fills frame perfectly */
     object-position: center !important;
+
     display: block !important;
+
     transform: none !important;
     scale: 1 !important;
     transition: none !important;
+    animation: none !important;
+
+    position: relative;
+    z-index: 1;
 }
 
-/* Remove all hover effects */
+/* ✅ REMOVE hover zoom completely */
 .profile-image-wrapper:hover .profile-img {
     transform: none !important;
     scale: 1 !important;
 }
 
-/* Add background color for empty spaces */
-.profile-image-wrapper {
-    background: #1a1a1a;
-}
-
+/* overlay effects (kept as it is) */
 .gold-overlay {
     position: absolute;
     top: 0;
@@ -600,25 +603,12 @@ body {
     border-top: none;
 }
 
+/* OPTIONAL: remove scan animation if you want FULLY STATIC */
 .scan-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.1) 50%);
-    background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 3;
-    animation: scan 8s linear infinite;
-    opacity: 0.3;
+    display: none; /* ✅ stop moving line */
 }
 
-@keyframes scan {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
-}
-
+/* ✅ STOP FLOATING ICON MOVEMENT */
 .floating-icon {
     position: absolute;
     width: 60px;
@@ -632,7 +622,8 @@ body {
     justify-content: center;
     font-size: 2rem;
     z-index: 5;
-    animation: floatIcon 4s infinite;
+
+    animation: none !important; /* 🔥 FIX */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -641,7 +632,6 @@ body {
     right: -5%;
     border-color: var(--gold-rich);
     color: var(--gold-rich);
-    animation-delay: 0s;
 }
 
 .data-icon {
@@ -649,7 +639,6 @@ body {
     left: -5%;
     border-color: var(--silver-rich);
     color: var(--silver-rich);
-    animation-delay: 1s;
 }
 
 .ncc-icon {
@@ -657,7 +646,6 @@ body {
     right: -10%;
     border-color: var(--gold-pale);
     color: var(--gold-pale);
-    animation-delay: 2s;
 }
 
 @keyframes floatIcon {
