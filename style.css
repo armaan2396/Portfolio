@@ -474,17 +474,7 @@ body {
     animation: none;
 }
 
-/* ===== ULTRA HD PROFILE IMAGE ===== */
-
-/* Add this to your existing style.css or replace the profile image section */
-
-/* ===== PROFILE IMAGE FIX ===== */
-
-/* ===== PROFILE IMAGE FIX - LESS ZOOMED ===== */
-
-/* ===== PROFILE IMAGE FIX - FULL IMAGE NO CROP ===== */
-
-/* ===== PROFILE IMAGE FIX - FULL IMAGE NO ZOOM NO CROP ===== */
+/* ===== PROFILE IMAGE - COMPLETE NO ZOOM FIX ===== */
 
 .profile-container {
     position: relative;
@@ -513,33 +503,30 @@ body {
     justify-content: center;
 }
 
-/* KEY FIX - Shows FULL image without any zoom or crop */
+/* THE FIX - Image shows exactly as original size, no zoom, no crop */
 .profile-img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: scale-down;
-    object-position: center;
-    display: block;
-    transition: none;
-    background-color: var(--black-rich);
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    transform: none !important;
+    scale: 1 !important;
+    transition: none !important;
 }
 
-/* Remove hover zoom completely */
+/* Remove all hover effects */
 .profile-image-wrapper:hover .profile-img {
-    transform: none;
+    transform: none !important;
+    scale: 1 !important;
 }
 
-/* Alternative: If the above doesn't work, uncomment this one */
-/*
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: none;
-    object-position: center;
+/* Add background color for empty spaces */
+.profile-image-wrapper {
+    background: #1a1a1a;
 }
-*/
 
 .gold-overlay {
     position: absolute;
