@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armaan Sharma — NCC | Java Developer | Data Analyst</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ultra HD Black & Gold Background -->
+    <div class="black-hole"></div>
+    <div class="gold-particles"></div>
+    <div class="silver-lines"></div>
+    
+    <!-- 3D Floating Elements -->
+    <div class="floating-cubes">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-black">ARMAAN</span>
+                <span class="logo-gold">SHARMA</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#expertise" class="nav-link">EXPERTISE</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#qualifications" class="nav-link">QUALIFICATIONS</a>
+                <a href="#ncc" class="nav-link">NCC</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge" data-aos="fade-up">
+                    <span class="badge-gold"></span>
+                    <span>JAVA DEVELOPER • DATA ANALYST</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-black">Armaan</span>
+                    <span class="title-gold">Sharma</span>
+                </h1>
+                
+                <div class="hero-typing" data-aos="fade-up" data-aos-delay="200">
+                    <span class="typed-text"></span>
+                    <span class="cursor-gold">|</span>
+                </div>
+                
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    Computer Science Engineer specializing in robust Java applications 
+                    and insightful data analytics. NCC-trained leader with a passion for excellence.
+                </p>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card gold">
+                        <span class="stat-number" data-target="150">0</span>
+                        <span class="stat-label">DSA Problems</span>
+                    </div>
+                    <div class="stat-card silver">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card gold">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Certs</span>
+                    </div>
+                    <div class="stat-card silver">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">NCC Camps</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#contact" class="btn btn-gold">
+                        Connect
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-silver">
+                        View Work
+                    </a>
+                    <button class="btn btn-icon" id="downloadCV">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-right" data-aos="fade-left" data-aos-delay="400">
+                <div class="profile-container">
+                    <div class="profile-frame">
+                        <div class="profile-image-wrapper">
+                            <!-- Profile Image - TRY LOCAL FILE FIRST -->
+                            <img src="assets/profile.jpg" 
+                                 alt="Armaan Sharma"
+                                 class="profile-img"
+                                 loading="eager"
+                                 onerror="this.onerror=null; this.src='https://randomuser.me/api/portraits/men/32.jpg';">
+                            <div class="gold-overlay"></div>
+                            <div class="silver-glow"></div>
+                            
+                            <!-- HD Corner Accents -->
+                            <div class="corner-gold top-left"></div>
+                            <div class="corner-gold top-right"></div>
+                            <div class="corner-gold bottom-left"></div>
+                            <div class="corner-gold bottom-right"></div>
+                            
+                            <!-- Scan Line Effect -->
+                            <div class="scan-line"></div>
+                        </div>
+                        
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-icon java-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="floating-icon data-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="floating-icon ncc-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line-gold"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number gold">01</span>
+                <h2 class="section-title silver">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-right">
+                    <h3 class="gold-text">Computer Science Engineer</h3>
+                    <p class="about-text">
+                        I'm a passionate Computer Science student at Lovely Professional University with 
+                        a strong foundation in Java development and data analytics. My journey in tech 
+                        is driven by the desire to build robust applications and derive meaningful insights.
+                    </p>
+                    <p class="about-text">
+                        As an NCC cadet with completed certifications, I bring discipline, leadership, 
+                        and teamwork to every project. My NCC experience has shaped my approach to 
+                        problem-solving and collaboration.
+                    </p>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-pin gold"></i>
+                            <div>
+                                <span class="silver-text">Location</span>
+                                <strong>Punjab, India</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap gold"></i>
+                            <div>
+                                <span class="silver-text">Education</span>
+                                <strong>B.Tech CSE @ LPU</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code gold"></i>
+                            <div>
+                                <span class="silver-text">Experience</span>
+                                <strong>2+ Years Coding</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-trophy gold"></i>
+                            <div>
+                                <span class="silver-text">Achievements</span>
+                                <strong>NCC Award Winner</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-card" data-aos="fade-left">
+                    <h3 class="silver-text">Technical Skills</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="gold">Java Development</span>
+                            <span class="silver">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="gold">Data Analysis</span>
+                            <span class="silver">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="gold">DSA</span>
+                            <span class="silver">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="gold">SQL & Databases</span>
+                            <span class="silver">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="gold">Python Programming</span>
+                            <span class="silver">86%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 86%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number silver">02</span>
+                <h2 class="section-title gold">Expertise</h2>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="flip-card" data-aos="flip-left">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front gold-gradient">
+                            <i class="fab fa-java"></i>
+                            <h3>Java</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">☕</span>
+                                <p class="game-fact">"Write Once, Run Anywhere"</p>
+                                <div class="game-trivia">Java runs on 3 billion devices worldwide!</div>
+                                <div class="game-code">System.out.println("Hello, World!");</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front silver-gradient">
+                            <i class="fas fa-chart-pie"></i>
+                            <h3>Analytics</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">📊</span>
+                                <p class="game-fact">"Data is the New Oil"</p>
+                                <div class="game-trivia">90% of world's data created in last 2 years!</div>
+                                <div class="game-code">import pandas as pd</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front gold-gradient">
+                            <i class="fas fa-sitemap"></i>
+                            <h3>DSA</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">🧮</span>
+                                <p class="game-fact">"Algorithms are Thoughts"</p>
+                                <div class="game-trivia">Google uses 20+ data structures per search!</div>
+                                <div class="game-code">Arrays.sort(arr);</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front silver-gradient">
+                            <i class="fas fa-database"></i>
+                            <h3>SQL</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">🗄️</span>
+                                <p class="game-fact">"Talk to Databases"</p>
+                                <div class="game-trivia">SQL is 50 years old and still going strong!</div>
+                                <div class="game-code">SELECT * FROM users;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front gold-gradient">
+                            <i class="fas fa-code"></i>
+                            <h3>Web</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">🌐</span>
+                                <p class="game-fact">"Build the Web"</p>
+                                <div class="game-trivia">1.9 billion websites exist globally!</div>
+                                <div class="game-code">&lt;h1&gt;Hello World&lt;/h1&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front silver-gradient">
+                            <i class="fas fa-users"></i>
+                            <h3>Soft Skills</h3>
+                            <p>Hover to discover →</p>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">🤝</span>
+                                <p class="game-fact">"People Skills Matter"</p>
+                                <div class="game-trivia">85% of job success comes from soft skills!</div>
+                                <div class="game-code">team.collaborate();</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number gold">03</span>
+                <h2 class="section-title silver">Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="flip-card" data-aos="flip-right">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front gold-gradient">
+                            <div class="project-number">01</div>
+                            <h3>Virtual Classroom</h3>
+                            <div class="project-tech-stack">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">📚</span>
+                                <p class="game-fact">500+ students used</p>
+                                <div class="game-trivia">Course creation, quizzes, enrollment system</div>
+                                <div class="game-code">Tech: Java, MySQL, REST APIs, HTML/CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-right" data-aos-delay="100">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front silver-gradient">
+                            <div class="project-number">02</div>
+                            <h3>Smart Parking</h3>
+                            <div class="project-tech-stack">
+                                <span>Java</span>
+                                <span>DSA</span>
+                                <span>Priority Queue</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">🚗</span>
+                                <p class="game-fact">40% faster search</p>
+                                <div class="game-trivia">Uses graphs & priority queues for optimization</div>
+                                <div class="game-code">Tech: Java, DSA, Priority Queue, Graphs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-right" data-aos-delay="200">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front gold-gradient">
+                            <div class="project-number">03</div>
+                            <h3>Library System</h3>
+                            <div class="project-tech-stack">
+                                <span>Java</span>
+                                <span>DSA</span>
+                                <span>Linked Lists</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">📖</span>
+                                <p class="game-fact">10,000+ books managed</p>
+                                <div class="game-trivia">Uses linked lists, queues, trees</div>
+                                <div class="game-code">Tech: Java, Linked Lists, Queues, Trees</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-aos="flip-right" data-aos-delay="300">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front silver-gradient">
+                            <div class="project-number">04</div>
+                            <h3>Drop of Hope</h3>
+                            <div class="project-tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back black-gradient">
+                            <div class="game-content">
+                                <span class="game-emoji">💧</span>
+                                <p class="game-fact">50+ water sources mapped</p>
+                                <div class="game-trivia">Interactive data visualization</div>
+                                <div class="game-code">Tech: HTML5, CSS3, JavaScript, Chart.js</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="qualifications">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number silver">04</span>
+                <h2 class="section-title gold">Qualifications</h2>
+            </div>
+            
+            <div class="quals-grid">
+                <div class="quals-card" data-aos="fade-up">
+                    <div class="quals-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <div class="quals-list">
+                        <div class="quals-item">
+                            <span class="quals-year">2023 - 2027</span>
+                            <p class="quals-title">B.Tech Computer Science</p>
+                            <p class="quals-desc">Lovely Professional University, Punjab</p>
+                            <span class="quals-grade">CGPA: 6.08</span>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">2020 - 2021</span>
+                            <p class="quals-title">Senior Secondary (Class 12)</p>
+                            <p class="quals-desc">Kangra, HP</p>
+                            <span class="quals-grade">Percentage: 80%</span>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">2018 - 2019</span>
+                            <p class="quals-title">High School (Class 10)</p>
+                            <p class="quals-desc">Kangra, HP</p>
+                            <span class="quals-grade">Percentage: 65%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quals-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quals-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <div class="quals-list">
+                        <div class="quals-item">
+                            <span class="quals-year">Nov 2025</span>
+                            <p class="quals-title">Privacy & Security in Social Media</p>
+                            <p class="quals-desc">NPTEL</p>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">Sep 2025</span>
+                            <p class="quals-title">Bits and Bytes Certificate</p>
+                            <p class="quals-desc">Coursera</p>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">Jul 2025</span>
+                            <p class="quals-title">DSA with Java</p>
+                            <p class="quals-desc">Cipher School</p>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">Nov 2025</span>
+                            <p class="quals-title">Data Analytics Simulation</p>
+                            <p class="quals-desc">Deloitte (Forage)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quals-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quals-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Achievements</h3>
+                    <div class="quals-list">
+                        <div class="quals-item">
+                            <span class="quals-year">Feb 2026</span>
+                            <p class="quals-title">150+ DSA Problems Solved</p>
+                            <p class="quals-desc">LeetCode & GeeksforGeeks</p>
+                        </div>
+                        
+                        <div class="quals-item">
+                            <span class="quals-year">March 2026</span>
+                            <p class="quals-title">NCC 'C' Certificate</p>
+                            <p class="quals-desc">Completed March 2026</p>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">March 2025</span>
+                            <p class="quals-title">NCC 'B' Certificate</p>
+                            <p class="quals-desc">Completed March 2025</p>
+                        </div>
+                        <div class="quals-item">
+                            <span class="quals-year">Feb 2025</span>
+                            <p class="quals-title">Army Attachment Camp</p>
+                            <p class="quals-desc">Leadership Recognition</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NCC Section -->
+    <section id="ncc" class="ncc">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number gold">05</span>
+                <h2 class="section-title silver">NCC Journey</h2>
+            </div>
+            
+            <div class="ncc-showcase" data-aos="zoom-in">
+                <div class="ncc-emblem">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                
+                <div class="ncc-stats">
+                    <div class="ncc-stat">
+                        <span class="ncc-number gold" data-target="3">0</span>
+                        <span class="ncc-label silver">Years</span>
+                    </div>
+                    <div class="ncc-stat">
+                        <span class="ncc-number gold" data-target="3">0</span>
+                        <span class="ncc-label silver">Camps</span>
+                    </div>
+                    <div class="ncc-stat">
+                        <span class="ncc-number gold" data-target="2">0</span>
+                        <span class="ncc-label silver">Certs</span>
+                    </div>
+                    <div class="ncc-stat">
+                        <span class="ncc-number gold" data-target="1">0</span>
+                        <span class="ncc-label silver">Award</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ncc-timeline">
+                <div class="timeline-flip" data-aos="fade-right">
+                    <div class="timeline-dot gold"></div>
+                    <div class="flip-card timeline-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front gold-gradient">
+                                <span class="timeline-date">Feb 2025</span>
+                                <h4>Army Attachment Camp</h4>
+                                <p>Leadership Training</p>
+                            </div>
+                            <div class="flip-card-back black-gradient">
+                                <div class="game-content">
+                                    <span class="game-emoji">⚔️</span>
+                                    <p class="game-fact">"Leadership is Action"</p>
+                                    <div class="game-trivia">Completed with distinction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-flip" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-dot gold"></div>
+                    <div class="flip-card timeline-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front silver-gradient">
+                                <span class="timeline-date">Mar 2025</span>
+                                <h4>NCC 'B' Certificate</h4>
+                                <p>Advanced Training</p>
+                            </div>
+                            <div class="flip-card-back black-gradient">
+                                <div class="game-content">
+                                    <span class="game-emoji">🎯</span>
+                                    <p class="game-fact">"Excellence is an Attitude"</p>
+                                    <div class="game-trivia">Advanced certification achieved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-flip" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-dot gold"></div>
+                    <div class="flip-card timeline-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front gold-gradient">
+                                <span class="timeline-date">Mar 2026</span>
+                                <h4>NCC 'C' Certificate</h4>
+                                <p>Advanced Leadership</p>
+                            </div>
+                            <div class="flip-card-back black-gradient">
+                                <div class="game-content">
+                                    <span class="game-emoji">🏆</span>
+                                    <p class="game-fact">"Leadership Excellence"</p>
+                                    <div class="game-trivia">Top-tier certification completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ncc-quote" data-aos="fade-up">
+                <i class="fas fa-quote-left gold"></i>
+                <p class="silver">"The discipline and leadership skills from NCC drive my approach to every project."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number silver">06</span>
+                <h2 class="section-title gold">Contact</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 class="gold">Let's Connect</h3>
+                    <p class="silver-text">Open for opportunities and collaborations.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:armaansharma@email.com" class="contact-link">
+                            <i class="fas fa-envelope gold"></i>
+                            <span>armaansharma@email.com</span>
+                        </a>
+                        <a href="https://github.com/armaan2396" class="contact-link">
+                            <i class="fab fa-github gold"></i>
+                            <span>/armaan2396</span>
+                        </a>
+                        <a href="https://linkedin.com/in/armaan-sharma1008" class="contact-link">
+                            <i class="fab fa-linkedin gold"></i>
+                            <span>/in/armaan-sharma1008</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-cube">
+                        <div class="cube-face front">💬</div>
+                        <div class="cube-face back">📧</div>
+                        <div class="cube-face right">📱</div>
+                        <div class="cube-face left">🌐</div>
+                        <div class="cube-face top">📍</div>
+                        <div class="cube-face bottom">⭐</div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <input type="text" placeholder="Your Name" class="silver-input" required>
+                    <input type="email" placeholder="Your Email" class="silver-input" required>
+                    <textarea rows="4" placeholder="Your Message" class="silver-input" required></textarea>
+                    <button type="submit" class="btn btn-gold">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="silver">© 2026 Armaan Sharma — NCC Cadet | Java Developer | Data Analyst</p>
+            <p class="gold-quote">"Discipline is the bridge between goals and accomplishment."</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
