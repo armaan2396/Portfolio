@@ -482,6 +482,8 @@ body {
 
 /* ===== PROFILE IMAGE FIX - LESS ZOOMED ===== */
 
+/* ===== PROFILE IMAGE FIX - FULL IMAGE NO CROP ===== */
+
 .profile-container {
     position: relative;
     width: 100%;
@@ -513,27 +515,17 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Changed from cover to contain to show full image without zoom */
+    /* contain shows the ENTIRE image without any cropping */
     object-position: center;
     display: block;
     transition: transform 0.5s ease;
     background-color: var(--black-rich);
 }
 
-/* Optional: If you want to maintain aspect ratio but fill the frame without zoom */
-/* Uncomment below if you prefer fill with slight background blur */
-/*
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-}
-*/
-
+/* Optional: Slight zoom on hover - can be removed if not wanted */
 .profile-image-wrapper:hover .profile-img {
     transform: scale(1.02);
-    /* Reduced from 1.05 to 1.02 for subtle zoom on hover */
+    transition: transform 0.5s ease;
 }
 
 .gold-overlay {
@@ -672,7 +664,6 @@ body {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(10deg); }
 }
-
 /* ===== SCROLL INDICATOR ===== */
 
 .scroll-indicator {
