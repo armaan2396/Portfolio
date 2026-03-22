@@ -480,6 +480,8 @@ body {
 
 /* ===== PROFILE IMAGE FIX ===== */
 
+/* ===== PROFILE IMAGE FIX - LESS ZOOMED ===== */
+
 .profile-container {
     position: relative;
     width: 100%;
@@ -502,18 +504,36 @@ body {
     border: 4px solid var(--gold-rich);
     box-shadow: var(--shadow-gold), 0 0 0 4px var(--silver-dark);
     background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    /* Changed from cover to contain to show full image without zoom */
+    object-position: center;
     display: block;
-    transition: transform 1s;
+    transition: transform 0.5s ease;
+    background-color: var(--black-rich);
 }
 
+/* Optional: If you want to maintain aspect ratio but fill the frame without zoom */
+/* Uncomment below if you prefer fill with slight background blur */
+/*
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+*/
+
 .profile-image-wrapper:hover .profile-img {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    /* Reduced from 1.05 to 1.02 for subtle zoom on hover */
 }
 
 .gold-overlay {
